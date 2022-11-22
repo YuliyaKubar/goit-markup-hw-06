@@ -441,6 +441,7 @@
         <div class="mailing">
           <p class="mailing-title">Підпишіться на розсилку</p>
           <form class="mail-button">
+            <label for="email-user"></label>
             <input
               type="email"
               name="email"
@@ -509,13 +510,15 @@
               </svg>
             </div>
           </div>
-          <label for="user-name" class="modal-name">Коментар</label>
-          <textarea
-            name="comment"
-            id="user-name"
-            class="modal-name"
-            placeholder="Введіть текст"
-          ></textarea>
+          <div class="input-wrapper">
+            <label for="user-name" class="modal-name">Коментар</label>
+            <textarea
+              name="comment"
+              id="user-name"
+              class="modal-name"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
           <div class="checkbox check-line">
             <input
               id="checkbox-agree"
@@ -530,9 +533,8 @@
                   <use href="./image/icon.svg#icon-check-mark"></use>
                 </svg>
               </span>
-
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="conditions"> Умови договору</a>
+              <a href="" class="conditions">Умови договору</a>
             </label>
           </div>
           <button type="submit" class="form-button">Відправити</button>
